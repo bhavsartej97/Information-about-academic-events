@@ -1,0 +1,48 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.11
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Feb 26, 2017 at 01:19 PM
+-- Server version: 5.6.21
+-- PHP Version: 5.6.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `de`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `research`
+--
+
+CREATE TABLE IF NOT EXISTS `research` (
+  `name` text NOT NULL,
+  `date` date NOT NULL,
+  `start_time` time NOT NULL,
+  `end_time` time NOT NULL,
+  `location` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `research`
+--
+
+INSERT INTO `research` (`name`, `date`, `start_time`, `end_time`, `location`) VALUES
+('RESEARCH ON ADVANCED CLOUD COMPUTING', '2017-02-28', '09:00:00', '03:00:00', 'VISHWAKARMA GOVERNMENT ENGINEERING COLLEGE NEAR VISAT CROSS ROADS, CHANDKHEDA '),
+('WORKSHOP ON ARTIFICIAL INTELLIGENCE ', '2017-02-27', '11:00:00', '06:00:00', 'AHMEDABAD INDIA'),
+('SEMINAR ON RESEARCH FIELDS IN COMPUTER SCIENCE ', '2017-03-08', '09:00:00', '06:00:00', 'VISHWAKARMA GOVERNMENT ENGINEERING COLLEGE NEAER VISAT CROSS ROADS, CHANKDKHEDA');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
